@@ -1,0 +1,31 @@
+<input id="input" placeholder="Enter item">
+
+<button onclick="add()">Add</button>
+
+<ul id="list-container">
+<li>Hello
+<button onclick="deleteItem(event)">Delete</button>
+</li>
+</ul>
+
+<script>
+// Selecting elements
+var ul = document.getElementById("list-container");
+var input = document.getElementById("input");
+
+function add() {
+    var listitem = document.createElement("li");
+
+    // Safely create button and append it
+    listitem.innerHTML = input.value + ' <button onclick="deleteItem(event)">Delete</button>';
+    ul.append(listitem);
+
+    // Clear input field after adding item
+    input.value = '';
+}
+
+function deleteItem(event) {
+    // Remove the parent list item of the clicked button
+    event.target.parentElement.remove();
+}
+</script>

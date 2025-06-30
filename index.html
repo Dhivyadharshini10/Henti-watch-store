@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i');
+body{
+  font-family: 'Muli', sans-serif;
+  background:#ddd;
+}
+
+
+
+
+
+
+
+
+.shell{
+  padding:80px 0;
+}
+.wsk-cp-product{
+  background:#fff;
+  padding:15px;
+  border-radius:6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  position:relative;
+  margin:20px auto;
+}
+.wsk-cp-img{
+  position:absolute;
+  top:5px;
+  left:50%;
+  transform:translate(-50%);
+  -webkit-transform:translate(-50%);
+  -ms-transform:translate(-50%);
+  -moz-transform:translate(-50%);
+  -o-transform:translate(-50%);
+  -khtml-transform:translate(-50%);
+  width: 100%;
+  padding: 15px;
+  transition: all 0.2s ease-in-out;
+}
+.wsk-cp-img img{
+  width:100%;
+  transition: all 0.2s ease-in-out;
+  border-radius:6px;
+}
+.wsk-cp-product:hover .wsk-cp-img{
+  top:-40px;
+}
+.wsk-cp-product:hover .wsk-cp-img img{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.wsk-cp-text{
+  padding-top:150%;
+}
+.wsk-cp-text .category{
+  text-align:center;
+  font-size:12px;
+  font-weight:bold;
+  padding:5px;
+  margin-bottom:45px;
+  position:relative;
+  transition: all 0.2s ease-in-out;
+}
+.wsk-cp-text .category > *{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -khtml-transform: translate(-50%,-50%);
+    
+}
+.wsk-cp-text .category > span{
+  padding: 12px 30px;
+  border: 1px solid #313131;
+  background:#212121;
+  color:#fff;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  border-radius:27px;
+  transition: all 0.05s ease-in-out;
+  
+}
+.wsk-cp-product:hover .wsk-cp-text .category > span{
+  border-color:#ddd;
+  box-shadow: none;
+  padding: 11px 28px;
+}
+.wsk-cp-product:hover .wsk-cp-text .category{
+  margin-top: 0px;
+}
+.wsk-cp-text .title-product{
+  text-align:center;
+}
+.wsk-cp-text .title-product h3{
+  font-size:20px;
+  font-weight:bold;
+  margin:15px auto;
+  overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  width:100%;
+}
+.wsk-cp-text .description-prod p{
+  margin:0;
+}
+/* Truncate */
+.wsk-cp-text .description-prod {
+  text-align:center;
+  width: 100%;
+  height:62px;
+  overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  margin-bottom:15px;
+}
+.card-footer{
+  padding: 25px 0 5px;
+  border-top: 1px solid #ddd;
+}
+.card-footer:after, .card-footer:before{
+  content:'';
+  display:table;
+}
+.card-footer:after{
+  clear:both;
+}
+
+.card-footer .wcf-left{
+  float:left;
+  
+}
+
+.card-footer .wcf-right{
+  float:right;
+}
+
+.price{
+  font-size:18px;
+  font-weight:bold;
+}
+
+a.buy-btn{
+  display:block;
+  color:#212121;
+  text-align:center;
+  font-size: 18px;
+  width:35px;
+  height:35px;
+  line-height:35px;
+  border-radius:50%;
+  border:1px solid #212121;
+  transition: all 0.2s ease-in-out;
+}
+a.buy-btn:hover , a.buy-btn:active, a.buy-btn:focus{
+  border-color: #FF9800;
+  background: #FF9800;
+  color: #fff;
+  text-decoration:none;
+}
+.wsk-btn{
+  display:inline-block;
+  color:#212121;
+  text-align:center;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  border-color: #FF9800;
+  background: #FF9800;
+  padding:12px 30px;
+  border-radius:27px;
+  margin: 0 5px;
+}
+.wsk-btn:hover, .wsk-btn:focus, .wsk-btn:active{
+  text-decoration:none;
+  color:#fff;
+}  
+.red{
+  color:#F44336;
+  font-size:22px;
+  display:inline-block;
+  margin: 0 5px;
+}
+@media screen and (max-width: 991px) {
+  .wsk-cp-product{
+    margin:40px auto;
+  }
+  .wsk-cp-product .wsk-cp-img{
+  top:-40px;
+}
+.wsk-cp-product .wsk-cp-img img{
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+  .wsk-cp-product .wsk-cp-text .category > span{
+  border-color:#ddd;
+  box-shadow: none;
+  padding: 11px 28px;
+}
+.wsk-cp-product .wsk-cp-text .category{
+  margin-top: 0px;
+}
+a.buy-btn{
+  border-color: #FF9800;
+  background: #FF9800;
+  color: #fff;
+}
+}
+    </style>
+    
+<header>
+   
+
+  
+
+    <nav>
+        <img
+            src="HENTI-removebg-preview.png"
+            alt="logo" class="logo">
+       
+       
+    </nav>
+  
+
+    
+
+
+
+    
+</header>
+    <div class="carousel">
+        <div class="list">
+            <div class="item">
+                <img src="blue.png">
+                <div class="introduce">
+                    <div class="title">Olivia burton</div>
+                    <div class="topic">Londan</div>
+                    <div class="des">
+                        <!-- 20 lorem -->
+                        Powered by a battery and use a quartz crystal to regulate timekeeping.
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Quartz Watches</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Olivia Burton Is The British Accessories Brand Founded In 2012 By Best Friends And Former Fashion Buyers Jemma And Lesa. Named After Lesas Great Aunt, The Brand Takes Inspiration From Vintage Finds And The Latest Catwalk Trends To Create Watches And Jewelry With Extraordinary Attention To Detail. Pieces Are Designed At The Brands London Studio. 
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Price</p>
+                            <p>3,699</p>
+                        </div>
+                        <div>
+                            <p>Size</p>
+                            <p>large 38mm</p>
+                        </div>
+                        <div>
+                            <p>Warranty</p>
+                            <p> 2years</p>
+                        </div>
+                        <div>
+                            <p>Offers</p>
+                            <p>20-50%</p>
+                        </div>
+                        <div>
+                            <p>Design</p>
+                            <p>Starry skies </p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>ADD TO CART</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="a23ec98f977f11866e3d50a82747593a-removebg-preview.png">
+                <div class="introduce">
+                    <div class="title">RAGA</div>
+                    <div class="topic">TITAN</div>
+                    <div class="des">
+                        <!-- 20 lorem -->
+                        Elegant and affordable Swiss automatic watch.A pilot's watch with a unique slide rule bezel.
+
+                        Fossil Gen 6: A fashionable smartwatch with Wear OS.
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Raga quartz</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        The Raga collection includes various sub-lines like Flora, Garden of Eden, and Power Pearls, offering quartz movements and water resistance. Prices range from ₹3,000 to ₹18,000 depending on the design and materials used.These timepieces are versatile, perfect for formal and semi-formal occasions, offering a statement piece for women who value style and individuality. Each watch in the collection is powered by a quartz movement, includes mineral glass for durability.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Price</p>
+                            <p>4,795</p>
+                        </div>
+                        <div>
+                            <p>Size</p>
+                            <p>30.40mm</p>
+                        </div>
+                        <div>
+                            <p>Warranty</p>
+                            <p> 1 year</p>
+                        </div>
+                        <div>
+                            <p>Offers</p>
+                            <p>40-50%</p>
+                        </div>
+                        <div>
+                            <p>Design</p>
+                            <p> Silver STRAP MATERIAL</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>ADD TO CART</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="dd.png">
+                <div class="introduce">
+                    <div class="title">CALVIN KLEIN</div>
+                    <div class="topic">Los angles</div>
+                    <div class="des">
+                        <!-- 20 lorem -->
+                        Calvin Klein watches often feature clean lines and simple, elegant designs.
+
+Materials: They use high-quality materials such as stainless steel, leather, and sometimes gold or silver plating.
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Bracelet watch</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        the Gold-Tone Bracelet Watch (Model: 25200056) offers a 43mm round case, three-hand quartz movement, and a water resistance of up to 30 meters. It comes with a date window and a sleek gold-tone dial, making it an elegant accessory. Similarly, the Iconic Mesh Watch (Model: 25300012) highlights a simple black dial paired with a mesh bracelet, offering a sophisticated look​
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Price</p>
+                            <p>9,576</p>
+                        </div>
+                        <div>
+                            <p>Size</p>
+                            <p>35mm  and 38mm</p>
+                        </div>
+                        <div>
+                            <p>Warranty</p>
+                            <p> 2years</p>
+                        </div>
+                        <div>
+                            <p>Offers</p>
+                            <p>30-50%</p>
+                        </div>
+                        <div>
+                            <p>Design</p>
+                            <p>Stainless steel </p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>ADD TO CART</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="77c8c91be8b9c9f7e830c6ec205396fb-removebg-preview.png">
+                <div class="introduce">
+                    <div class="title">Audemars Piguet</div>
+                    <div class="topic">Elegance</div>
+                    <div class="des">
+                        <!-- 20 lorem -->
+                        The men's and women's collection includes a variety of styles, from classic analog watches to more contemporary designs. You can explore their range here.
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">AP Diver </div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                       
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Price</p>
+                            <p>64,000</p>
+                        </div>
+                        <div>
+                            <p>Size</p>
+                            <p>37mm  and 40mm</p>
+                        </div>
+                        <div>
+                            <p>Warranty</p>
+                            <p> 5years</p>
+                        </div>
+                        <div>
+                            <p>Offers</p>
+                            <p>25%</p>
+                        </div>
+                        <div>
+                            <p>Design</p>
+                            <p> Royal Oak Offshore </p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>ADD TO CART</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="wat.png">
+                <div class="introduce">
+                    <div class="title">FOSSIL</div>
+                    <div class="topic">California</div>
+                    <div class="des">
+                        <!-- 20 lorem -->
+                        Fossil offers a wide range of men's watches, from classic analog styles to modern smartwatches.
+
+                        The women's collection includes elegant and trendy designs, suitable for both casual and formal occasions.
+                       
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title"> F-ES5279</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        The Fossil Neutra Chronograph Women's Watch ES5279 is a stylish and functional timepiece featuring a two-tone stainless steel bracelet, white mother of pearl dial, and chronograph function. With luminous hands, date display, and 50m water resistance, this watch combines elegance with practicality for everyday wear.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Price</p>
+                            <p>16,404</p>
+                        </div>
+                        <div>
+                            <p>Size</p>
+                            <p>40mm  and 50mm</p>
+                        </div>
+                        <div>
+                            <p>Warranty</p>
+                            <p> 2years</p>
+                        </div>
+                        <div>
+                            <p>Offers</p>
+                            <p>50%</p>
+                        </div>
+                        <div>
+                            <p>Design</p>
+                            <p>Royal chronography </p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>ADD TO CART</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="re.png">
+                <div class="introduce">
+                    <div class="title">Calvin klein</div>
+                    <div class="topic">Vittoria </div>
+                    <div class="des">
+                        <!-- 20 lorem -->
+                        Iconic dive watch known for its durability and classic design.Famous for being the first watch on the moon.
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title"> C Logo 35mm Watch</div>
+                    <div class="des">
+                       
+                        The watch boasts a clean, minimalist design with a distinctive C-shaped texture on the dial, which adds a unique touch. It is set on a gold-plated stainless steel bracelet with polished center links and brushed outer links.
+                        Case Size: 35mm in diameter with a case height of 9.9mm, offering a balanced and sleek look on the wrist.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Price</p>
+                            <p>10,576</p>
+                        </div>
+                        <div>
+                            <p>Size</p>
+                            <p>35mm  and 38mm</p>
+                        </div>
+                        <div>
+                            <p>Warranty</p>
+                            <p> 2years</p>
+                        </div>
+                        <div>
+                            <p>Offers</p>
+                            <p>40-50%</p>
+                        </div>
+                        <div>
+                            <p>Design</p>
+                            <p>Stainless steel </p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>ADD TO CART</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+            <button id="back">See All  &#8599</button>
+        </div>
+    </div>
+
+    
+
+
+    <script src="app.js"></script>
+
+
+    <div class="container text-center">
+        <h1>Product card</h1>
+        
+        </div>
+        
+        
+        <div class="shell">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="wsk-cp-product">
+                  <div class="wsk-cp-img">
+                    <img src="https://i.pinimg.com/736x/59/b6/3c/59b63cafd074200153e215d59221df5c.jpg" alt="Product" class="img-responsive" />
+                  </div>
+                  <div class="wsk-cp-text">
+                    <div class="category">
+                      <span>Ethnic</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>SOKI</h3>
+                    </div>
+                    <div class="description-prod">
+                      <p>They typically feature analog quartz movements and are available in designs </p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="wcf-left"><span class="price">Rs.1000.</span></div>
+                      <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="wsk-cp-product">
+                  <div class="wsk-cp-img"><img src="https://i.pinimg.com/736x/88/6c/cb/886ccb483f63286ce6b5760fa3e7611f.jpg" alt="Product" class="img-responsive" /></div>
+                  <div class="wsk-cp-text">
+                    <div class="category">
+                      <span>Fashion</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>CALVIN KLEIN</h3>
+                    </div>
+                    <div class="description-prod">
+                      <p>These watches combine Swiss precision with timeless aesthetics, making them a great choice for those who value both style and functionality.
+
+
+
+
+
+
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="wcf-left"><span class="price">RS.12,500</span></div>
+                      <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="wsk-cp-product">
+                  <div class="wsk-cp-img"><img src="https://i.pinimg.com/736x/57/a8/9f/57a89f4e016968a0278fc2177ed78f42.jpg" alt="Product" class="img-responsive" /></div>
+                  <div class="wsk-cp-text">
+                    <div class="category">
+                      <span>Elegant</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>MICHAEL KORS</h3>
+                    </div>
+                    <div class="description-prod">
+                      <p>For a more tech-savvy option, the Michael Kors MKT5044 Iconic Runway Smartwatch</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="wcf-left"><span class="price">RS.22,500</span></div>
+                      <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="wsk-cp-product">
+                  <div class="wsk-cp-img"><img src="https://i.pinimg.com/736x/69/cf/0b/69cf0b7668cdadb1d1bbe949030a65c9.jpg" alt="Product" class="img-responsive" /></div>
+                  <div class="wsk-cp-text">
+                    <div class="category">
+                      <span>Opulent</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>LOUIS VUITTON</h3>
+                    </div>
+                    <div class="description-prod">
+                      <p>These watches feature exceptional craftsmanship, unique complications, and premium materials such as gold and diamonds​</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="wcf-left"><span class="price">Rs.6,40,000</span></div>
+                      <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="wsk-cp-product">
+                  <div class="wsk-cp-img">
+                    <img src="https://i.pinimg.com/736x/bf/42/d7/bf42d7a621a1102985447eb5914ca8d2.jpg" alt="Product" class="img-responsive" />
+                  </div>
+                  <div class="wsk-cp-text">
+                    <div class="category">
+                      <span>Ethnic</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>ROLEX</h3>
+                    </div>
+                    <div class="description-prod">
+                      <p>The Rolex Oyster Perpetual 28 is a luxury timepiece that combines elegance and durability, featuring a 28mm Oystersteel case and a smooth bezel. </p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="wcf-left"><span class="price">Rs.4,48,000</span></div>
+                      <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="wsk-cp-product">
+                  <div class="wsk-cp-img"><img src="https://i.pinimg.com/736x/3c/c0/ea/3cc0ea364f5e5aed477cdd7c692a7641.jpg" alt="Product" class="img-responsive" /></div>
+                  <div class="wsk-cp-text">
+                    <div class="category">
+                      <span>luxurious</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>DIOR</h3>
+                    </div>
+                    <div class="description-prod">
+                      <p>One notable model is the Dior Christal, which features high-end materials such as ceramic and diamonds</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="wcf-left"><span class="price">Rs.2,00,000</span></div>
+                      <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="wsk-cp-product">
+                  <div class="wsk-cp-img"><img src="https://i.pinimg.com/736x/5f/23/93/5f2393d75be4865a9ab0c98611b2e1cf.jpg" alt="Product" class="img-responsive" /></div>
+                  <div class="wsk-cp-text">
+                    <div class="category">
+                      <span>Beauty</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>TITAN</h3>
+                    </div>
+                    <div class="description-prod">
+                      <p>It's described as a perfect blend of sophistication and elegance, ideal for corporate or formal occasions​</p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="wcf-left"><span class="price">Rs.5,495</span></div>
+                      <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      
+
+
+</body>
+</html>

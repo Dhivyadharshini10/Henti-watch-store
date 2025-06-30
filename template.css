@@ -1,0 +1,307 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[data-parallax='container'] {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+    perspective-origin: center; }
+  
+  [data-parallax='group'] {
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d; }
+  
+  [data-parallax='layer'] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform-origin: center; }
+  
+  [data-parallax='none'] {
+    position: relative;
+    transform: translateZ(0);
+    z-index: 10; }
+  
+  [data-parallax-speed='front'] {
+    transform: translateZ(90px) scale(0.7);
+    z-index: 1; }
+  
+  [data-parallax-speed='base'] {
+    transform: translateZ(0);
+    z-index: 4; }
+  
+  [data-parallax-speed='slow'] {
+    transform: translateZ(-300px) scale(2);
+    z-index: 3; }
+  
+  [data-parallax-speed='slower'] {
+    transform: translateZ(-600px) scale(3);
+    z-index: 2; }
+  
+  [data-parallax-speed='slowest'] {
+    transform: translateZ(-900px) scale(4);
+    z-index: 1; }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+  
+  body {
+    font-family: sans-serif;
+    font-size: 125%;
+    line-height: 1.5;
+    color: #333; }
+  
+  h2,
+  p {
+    max-width: 40rem; }
+  
+  [data-image='captain-america'],
+  [data-image='scarlet-witch'],
+  [data-image='black-widow'],
+  [data-image='vision'],
+  [data-image='iron-man'] {
+    width: 20vw;
+    background-size: cover;
+    background-position: top center; }
+  
+  [data-image='captain-america'] {
+    left: -120vw;
+    background-image: url(https://i.pinimg.com/736x/e3/25/eb/e325eb6853b2bf4e731bcdb6adb8188d.jpg);
+    background-position: 30% 0%; }
+  
+  [data-image='scarlet-witch'] {
+    left: -20vw;
+    background-image: url(https://i.pinimg.com/736x/b9/f1/24/b9f124b9917d0e800a69e6e2df74392f.jpg); }
+  
+  [data-image='black-widow'] {
+    left: 40vw;
+    background-image: url(https://i.pinimg.com/736x/9e/c2/c3/9ec2c3e589cb8069e81e23035c697122.jpg); }
+  
+  [data-image='vision'] {
+    left: 100vw;
+    background-image: url(https://i.pinimg.com/736x/b7/e9/56/b7e9563e050d7a5a14fed7f51ba03a34.jpg); }
+  
+  [data-image='iron-man'] {
+    left: 200vw;
+    background-image: url(https://i.pinimg.com/736x/2c/43/56/2c435688d5fa9d82083e5794f0497043.jpg);
+    background-position: 80% 0%; }
+  
+  [data-image='captain-america-2'],
+  [data-image='winter-soldier'],
+  [data-image='scarlet-witch-2'],
+  [data-image='okoye'],
+  [data-image='mantis'],
+  [data-image='nebula'] {
+    width: 10vw;
+    height: 48vw;
+    margin-top: 100vw;
+    left: auto;
+   background-size: 400px 300px;
+    background-position: center top; }
+  
+  [data-image='captain-america-2'] {
+    right: 40vw;
+    background-image: url(https://www.pngplay.com/wp-content/uploads/9/Luxury-Watch-PNG-Photos.png);
+  width: 200px; height: 600px; }
+  
+  [data-image='winter-soldier'] {
+    right: 84vw;
+    background-image: url(https://i.pinimg.com/736x/34/8b/25/348b2502c22d26cf9213a76ea1149f4f.jpg); width: 200px; height: 600px;}
+  
+  [data-image='scarlet-witch-2'] {
+    right: 102vw;
+    background-image: url(https://i.pinimg.com/736x/37/fa/b7/37fab70241baea9d4fe97c7709451a2a.jpg); width: 200px; height: 600px; }
+  
+  [data-image='okoye'] {
+    right: -68vw;
+    background-image: url(https://i.pinimg.com/736x/37/fa/b7/37fab70241baea9d4fe97c7709451a2a.jpg); width: 200px; height: 600px; }
+  
+  [data-image='mantis'] {
+    right: -7vw;
+    background-image: url(https://i.pinimg.com/736x/c1/55/ed/c155ed98f6456dbc98ec70da4b99ec7d.jpg); width: 200px; height: 600px;; }
+  
+  [data-image='nebula'] {
+    right: 0vw;
+    background-image: url(https://i.pinimg.com/736x/37/fa/b7/37fab70241baea9d4fe97c7709451a2a.jpg); width: 200px; height: 600px;; }
+
+    .plot--content{
+      padding-bottom: 100px;
+    }
+  
+  .preamble,
+  .parallax,
+  .plot--content,
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10vmin; }
+    @media (min-width: 60rem) {
+      .preamble,
+      .parallax,
+      .plot--content,
+      footer {
+        padding-top: 20vmin;
+        padding-bottom: 20vmin; } }
+  
+  header[data-parallax='group'] {
+    height: 100vh; }
+  
+  .title {
+    width: 80vw;
+    height: fit-content;
+    padding: 2rem 0;
+    top: 60vh;
+    left: 10vw;
+    z-index: 10;
+    transform: translateZ(-150px) scale(1.5) skewY(-10deg);
+    transform-style: preserve-3d;
+    background-color: white;
+    text-align: center; }
+    .title h1,
+    .title h1 span {
+      color: #214;
+      line-height: 0.85;
+      text-transform: uppercase; }
+    .title h1 {
+      font-size: 12vw;
+      letter-spacing: -0.05em; }
+    .title h1 span {
+      display: block;
+      font-size: 6vw;
+      letter-spacing: 0.24em; }
+    .title p {
+      max-width: 100%;
+      margin-top: 1ex;
+      color: purple; }
+    .title::after {
+      content: '';
+      position: absolute;
+      top: 5vh;
+      right: 0;
+      bottom: -5vh;
+      left: 0;
+      z-index: 1;
+      transform: translateZ(-150px) scale(1.25);
+      background: rgba(0, 0, 0, 0.6);
+      box-shadow: 0 0 2rem black; }
+  
+  .preamble {
+    background-color: black;
+    box-shadow: 0 0 10vh rgba(0, 0, 0, 0.8); 
+  color: white;}
+    
+  
+  .parallax {
+    color: white;
+    overflow: hidden;
+    background-color: black; }
+    .parallax p {
+      text-shadow: 0 0 2px black; }
+  
+  .stars,
+  .deep-stars {
+    top: -10vh;
+    bottom: -10vh;
+    z-index: -1;
+    background-image: url(https://aepicos.com/codepen/images/blue-star-sky.png); }
+  
+  .stars {
+    background-size: 200%;
+    background-position: center left;
+    opacity: 0.8; }
+  
+  .deep-stars {
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; }
+  
+  .plot {
+    height: fit-content;
+    padding-bottom: 120vw;
+    overflow: hidden;
+    background-color: white; }
+    .plot h2 {
+      width: 100%;
+      margin-bottom: 1ex;
+      color: purple; }
+  
+  .plot--content {
+   padding-top: 90px; }
+  
+  footer {
+    min-height: 100px;
+    text-align: left;
+    background-color:black;
+    color: #ede6f3; }
+    footer h3 {
+      margin-bottom: 4rem;
+      transform: skewY(-10deg);
+      font-size: 10vw;
+      line-height: 0.85;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: -0.05em; }
+    footer h3 small {
+      display: block;
+      font-size: 5vw;
+      letter-spacing: 0.24em; }
+    footer p {
+      width: 70%;
+      margin-top: 1em; }
+    footer a {
+      color: #c9b3da; }
+  
+  .todo {
+    padding: 1rem 10vmin;
+    color: white;
+    background-color: crimson;
+    line-height: 1.3; }
+  
+    .side-navbar {
+    background-color: #1d232c;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 1s;
+
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+.side-navbar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-links a:hover {
+    text-decoration: underline;
+}
