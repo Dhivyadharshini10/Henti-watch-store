@@ -1,0 +1,3265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HENTI|EXPLORE</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="menexplore.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone in new just bought
+      </p>
+
+      <p class="toast-title">
+        Rose Gold Earrings
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>Free Shipping</b>
+            This Week Order Over - $55
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="usd">USD &dollar;</option>
+            <option value="eur">INR&euro;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Espa&ntilde;ol</option>
+            <option value="fr">Fran&ccedil;ais</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="homepage.html" class="header-logo">
+          <img src="HENTI-removebg-preview.png" alt="Anon's logo" width="70" height="50">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Categories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Kinetic Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Casual Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Digital Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Analog Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Quartz Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Solar Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="https://i.pinimg.com/736x/12/5a/95/125a9512107a0e22fa2de613cd32eb2a.jpg" alt="headphone collection" width="250"
+                      height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">GMT Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Skeleton Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Casual Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Dive Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Smart watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Solar Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="https://i.pinimg.com/736x/26/a6/bf/26a6bf5b167a360f2ef0dbed1f3773c0.jpg" alt="men's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Women's</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Formal Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Casual Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Luxury Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Minimalist Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Jewelry Watches</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="https://i.pinimg.com/736x/54/75/a1/5475a1e988ec3bd8f32b93637281a5cd.jpg" alt="women's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Men's</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Solar Watches</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Automatic Watches</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Mechanical Watches</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Quartz Watches</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Women's</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Fashion Watches</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Luxury Watches</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Jewelry Watches</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Minimalist Watches</a>
+              </li>
+
+            </ul>
+          </li>
+
+         
+
+          
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Blog</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Hot Offers</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Men's</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shirt</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shorts & Jeans</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Safety Shoes</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Wallet</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Women's</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Dress & Frock</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Makeup Kit</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Jewelry</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Couple Rings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Bracelets</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Perfume</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Clothes Perfume</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Deodorant</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Flower Fragrance</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Air Freshener</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Blog</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Hot Offers</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Fren&ccedil;h</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">EUR &euro;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="https://media.tudorwatch.com/image/upload/q_auto/f_auto/c_limit,w_3840/v1/tudorwatch/watch-family/women-watches/07-banner-image/women-watches-banner-landscape" alt="women's latest fashion sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Trending item</p>
+
+              <h2 class="banner-title">Women's latest fashion sale</h2>
+
+              <p class="banner-text">
+                starting at &dollar; <b>20</b>.00
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="https://www.glashuette-original.com/app/uploads/2021/04/Glashuette_Original-W19002233530-Detail-1-1920x680.jpg" alt="modern sunglasses" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Precision Meets Style</p>
+
+              <h2 class="banner-title">Modern Timepieces</h2>
+
+              <p class="banner-text">
+                starting at &dollar; <b>15</b>.00
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/94745daf-f683-4813-9382-b480b63062f8.__CR0,0,1464,600_PT0_SX1464_V1___.jpg" alt="new fashion summer sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle">Premium Collection</p>
+
+              <h2 class="banner-title">LUXURY WATCH SALE</h2>
+
+              <p class="banner-text">
+                starting at &dollar; <b>$49</b>.99
+              </p>
+
+              <a href="#" class="banner-btn">Shop now</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://tse3.mm.bing.net/th/id/OIP.004-pUnTIHdgpksT6_Dj0AHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3" alt="dress & frock" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Casual Watches</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://th.bing.com/th/id/R.8359de2f5f7cdceab43e78c09d039b8c?rik=rlbTktakWFoR0g&riu=http%3a%2f%2fwatchesbysjx.com%2fwp-content%2fuploads%2f2016%2fmigrate%2fSeiko-Prospex-Kinetic-GMT-2.jpg&ehk=LrL7J%2fh14N0S7sy1jZHvtoB%2bb9Fvu6VRh55feRB6i%2bY%3d&risl=&pid=ImgRaw&r=0" alt="winter wear" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Kinetic Watches</h3>
+
+                <p class="category-item-amount">(58)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://i.pinimg.com/originals/ba/f3/0c/baf30ca7faa8e8c0b7883af0f7067ce1.jpg" alt="glasses & lens" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Womens Watches</h3>
+
+                <p class="category-item-amount">(68)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://tse4.mm.bing.net/th/id/OIP._mKSQQOO3lxq7hwtdw52VwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="shorts & jeans" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Mens Watches</h3>
+
+                <p class="category-item-amount">(84)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://tse1.mm.bing.net/th/id/OIP.OgGuH1dWiFXtfuHMRDF8ZAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3/w" alt="t-shirts" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Sport Watches</h3>
+
+                <p class="category-item-amount">(35)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://tse2.mm.bing.net/th/id/OIP.nA5swAFoFXclAexkhwCABgHaIs?w=1560&h=1831&rs=1&pid=ImgDetMain&o=7&rm=3" alt="jacket" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Diver Watches</h3>
+
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://tse3.mm.bing.net/th/id/OIP.P1BxxcCxNjN8oUkisXjPuAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="watch" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Chronograph Watch</h3>
+
+                <p class="category-item-amount">(27)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="https://tse2.mm.bing.net/th/id/OIP.o8CGLUcgW15nn6DvaJbysgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="hat & caps" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Field Watches</h3>
+
+                <p class="category-item-amount">(39)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Category</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://www.androidauthority.com/wp-content/uploads/2014/11/Sony-Smartwatch-3-7-1620w-1080h.jpg" alt="clothes" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Smart Watches</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Apple</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Samsung</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Garmen</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Google</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://i.ytimg.com/vi/6uBVQfWy3Xw/maxresdefault.jpg" alt="footwear" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Diver Watches</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Rolex</p>
+                      <data value="45" class="stock" title="Available Stock">45</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Omega</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Tudor</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Casio Duro</p>
+                      <data value="26" class="stock" title="Available Stock">26</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.V8FiELDTO078tg4S4-fF0QHaHm?rs=1&pid=ImgDetMain&o=7&rm=3" alt="clothes" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Kinetic Watches</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Seiko</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Citizen</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">TAG Heuer</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://www.honestbrandreviews.com/wp-content/uploads/2022/04/Best-Watch-Brands-For-Women-6.jpg" alt="perfume" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Women Watches</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Rolex</p>
+                      <data value="12" class="stock" title="Available Stock">12 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Omega</p>
+                      <data value="60" class="stock" title="Available Stock">60 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Cartier</p>
+                      <data value="50" class="stock" title="Available Stock">50 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Longines </p>
+                      <data value="87" class="stock" title="Available Stock">87 pcs</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.T4igbOapA3NegTMHAaBv0QHaGQ?w=860&h=726&rs=1&pid=ImgDetMain&o=7&rm=3" alt="cosmetics" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Men's watches</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Rolex</p>
+                      <data value="68" class="stock" title="Available Stock">68</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Tag Heuer</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Omega</p>
+                      <data value="79" class="stock" title="Available Stock">79</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Tissot</p>
+                      <data value="23" class="stock" title="Available Stock">23</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://cdn.outsideonline.com/wp-content/uploads/2025/01/Garmin_Enduro_2_s.jpg" alt="glasses" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Sport Watches</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Patek Philippe Nautilus</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Rolex Submariner </p>
+                      <data value="48" class="stock" title="Available Stock">48</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="https://www.themanual.com/wp-content/uploads/sites/9/2021/04/mvmt-watch-feature.jpg?fit=800%2C800&p=1" alt="bags" class="menu-title-img" width="20" height="20">
+
+                    <p class="menu-title">Casual Watches</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Daniel Wellington</p>
+                      <data value="62" class="stock" title="Available Stock">62</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">MVMT</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Komono</p>
+                      <data value="80" class="stock" title="Available Stock">80</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Breda</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">best sellers</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.oDJQ0k5Ag1kNXGDzZiAfywHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tissot PRX Powermatic 80" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Tissot PRX Powermatic 80</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$699.00</del>
+                      <p class="price">$599.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://www.casio.com/content/dam/casio/product-info/locales/in/en/timepiece/product/watch/G/GA/GA2/ga-2100rc-1a/assets/GA-2100RC-1A.png.transform/main-visual-sp/image.png" alt="Casio G-SHOCK GA-2100" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Casio G-SHOCK GA-2100</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$120.00</del>
+                      <p class="price">$90.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://seikoboutique.com.sg/wp-content/uploads/2021/08/SRPD79K1.png" alt="Seiko 5 Sports Automatic" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Seiko 5 Sports Automatic</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$250.00</del>
+                      <p class="price">$190.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://media.endclothing.com/media/f_auto,q_auto:eco,w_1600/prodmedia/media/catalog/product/1/9/19-09-2016_timex_tw4b07000_tc_1.jpg" alt="Timex Expedition Scout" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Timex Expedition Scout</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$75.00</del>
+                      <p class="price">$60.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">New Arrivals</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://guesswatches.com/cdn/shop/files/Z51001G7MF.png?v=1726603282&width=990" alt="relaxed short full sleeve t-shirt" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">Modern Sport Watch – Watches</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Sport Watches</a>
+
+                      <div class="price-box">
+                        <p class="price">$120.00</p>
+                        <del>$200.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://m.media-amazon.com/images/I/61JJu5IRuGL.jpg" alt="girls pink embro design top" class="showcase-img" width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Blue Silicone Sport Watch</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Sport Watch</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$78.00</p>
+                        <del>$120.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://i5.walmartimages.com/seo/Stiwee-Women-Watches-Women-s-Quartz-Watch-Inlaid-with-Rhinestone-Steel-Band-Chain-Watch-Fashion-Business-Quartz-Watch-Rose-Gold_05cfad77-1d1f-4ffc-9b01-c5448a87e2ec.ba030f00a3e9f068b1f813f81e8fba69.jpeg?odnBg=FFFFFF&odnHeight=768&odnWidth=768" alt="black floral wrap midi skirt" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Luxury Women's Rose Gold Watch </h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Women Watches</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$89.00</p>
+                        <del>$150.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://m.media-amazon.com/images/I/71YhTRvNj5L._UF894%2C1000_QL80_.jpg" alt="pure garment dyed cotton shirt" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Black Touchscreen Smartwatch </h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Smart Watch</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$135.00</p>
+                        <del>$210.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://m.media-amazon.com/images/I/713qy8eBfsL._UY900_.jpg" alt="men yarn fleece full-zip jacket" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Men's Chronograph Leather Watch </h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Chronograph Watches</a>
+                
+                      <div class="price-box">
+                        <p class="price">$98.00</p>
+                        <del>$110.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://us.danielwellington.com/cdn/shop/files/ruffsz0eh1q2znm13mbh.png?v=1725004414&width=1500" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Daniel Wellington Petite Melrose</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Rose Gold Mesh</a>
+                
+                      <div class="price-box">
+                        <p class="price">$89.00</p>
+                        <del>$150.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://fossil.scene7.com/is/image/FossilPartners/FS5380_main?%24sfcc_fos_large%24=" alt="mens winter leathers jackets" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title"> Fossil Neutra Chronograph Watch </h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Quartz</a>
+                
+                      <div class="price-box">
+                        <p class="price">$120.00</p>
+                        <del>$200.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://m.media-amazon.com/images/I/711f6KLsMaL._UF894%2C1000_QL80_.jpg" alt="better basics french terry sweatshorts" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Samsung Galaxy Watch 6</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Samsung</a>
+                
+                      <div class="price-box">
+                        <p class="price">$299.00</p>
+                        <del>$350.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Trending</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/apple-watch-series-9.png" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Apple Watch Series 9</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Apple</a>
+            
+                      <div class="price-box">
+                        <p class="price">$300.00</p>
+                        <del>$350.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://images.openai.com/thumbnails/url/TKBevHicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw5yiSgNNis0r3ILLS7wzg41jkoLMsn2d3YrNC1wqwwNcncLyivPTvfJNAqrSK1KCa4KyAtPDSov0s1QKwYA0iQqAw" alt="trekking & running shoes - black" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Samsung Galaxy Watch 6</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Samsung</a>
+            
+                      <div class="price-box">
+                        <p class="price">$60.00</p>
+                        <del>$100.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://cdn.shopify.com/s/files/1/0904/0726/products/garmin-heart-rate-monitors-265-aqua-garmin-forerunner-265-265s-gps-watch-32791405461677.jpg?v=1747063036" alt="womens party wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Garmin Forerunner 265</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Garmin</a>
+            
+                      <div class="price-box">
+                        <p class="price">$50.00</p>
+                        <del>$85.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://lh3.googleusercontent.com/jzyEAOxetPgbG4nBPYma_BqPMW3Pi6HofZXeIBAIj-U4bwKRSByKr2qie6jydJRUta8NJrg5xU9LOsatYwOCotK_6ANtagUOZSY" alt="sports claw women's shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Google Pixel Watch 2</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Google</a>
+            
+                      <div class="price-box">
+                        <p class="price">$45.00</p>
+                        <del>$75.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://www.hlgross.com/cdn/shop/files/m124300-0005_drp-upright-bba-with-shadow.png?v=1720528971" alt="air tekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Rolex Oyster Perpetual</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Sports</a>
+            
+                      <div class="price-box">
+                        <p class="price">$45.00</p>
+                        <del>$80.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://citizenwatch.widen.net/content/2f1vxofxwn/webp/World%2BChronograph%2BA-T.webp?color=F9F8F6&crop=false&height=625&keep=c&quality=80&u=41zuoe&width=500" alt="Boot With Suede Detail" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title"> Citizen Eco-Drive Chrono</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Citizen</a>
+            
+                      <div class="price-box">
+                        <p class="price">$73.00</p>
+                        <del>$90.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://www.tagheuer.com/on/demandware.static/-/Library-Sites-TagHeuer-Shared/default/dwd6312b15/images/sprites/Carrera/CBN2A1AA.BA0643/RTW_backUp.jpg" alt="men's leather formal wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title"> TAG Heuer Carrera</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">TAG Heuer</a>
+            
+                      <div class="price-box">
+                        <p class="price">$46.00</p>
+                        <del>$85.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://www.watchtime.com/wp-content/uploads/2018/09/Patek_Philippe_Nautilus_Ref_57111A_front_1000.jpg" alt="casual men's brown shoes" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Patek Philippe Nautilus</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Patek Philippe</a>
+            
+                      <div class="price-box">
+                        <p class="price">$50.00</p>
+                        <del>$120.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Top Rated</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/G/GA/gab/ga-b2100cd-1a7/assets/GA-B2100CD-1A7_front.jpg.transform/main-visual-pc/image.jpg" alt="pocket watch leather pouch" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Casio G-SHOCK GA-B2100 Solar</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Solar Watch</a>
+            
+                      <div class="price-box">
+                        <p class="price">$100.00</p>
+                        <del>$120.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://assets.tissotwatches.com/transform/Extend/ab5d8168-c2b7-4b6a-8b14-08960980a3fb/T137_407_11_041_00" alt="silver deer heart necklace" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title"> Tissot PRX Powermatic 80
+</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Casual Watches</a>
+            
+                      <div class="price-box">
+                        <p class="price">$740.00</p>
+                        <del>$790.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://www.hamiltonwatch.com/media/catalog/product/h/6/h69439931.png" alt="titan 100 ml womens perfume" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Hamilton Khaki Field Mechanical</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Military Watches</a>
+            
+                      <div class="price-box">
+                        <p class="price">$550.00</p>
+                        <del>$600.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://m.media-amazon.com/images/I/711N4IWtrmL._UY1000_.jpg" alt="men's leather reversible belt" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Seiko Prospex “King Turtle” SRPE03</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Belt</a>
+            
+                      <div class="price-box">
+                        <p class="price">$450.00</p>
+                        <del>$500.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://timex.com/cdn/shop/files/TW2V38000.png?v=1744131227&width=990" alt="platinum zircon classic ring" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Timex Q Reissue GMT</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Casual  Watches</a>
+            
+                      <div class="price-box">
+                        <p class="price">$162.00</p>
+                        <del>$200.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/G/GA/GA2/GA-2100-1A1/us-assets/GA-2100-1A1.png.transform/main-visual-sp/image.png" alt="smart watche vital plus" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Casio G-SHOCK GA-2100 “CasiOak”</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Sport Watches</a>
+            
+                      <div class="price-box">
+                        <p class="price">$99.00</p>
+                        <del>$120.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://api.ecom.longines.com/media/catalog/product/w/a/watch-collection-hydroconquest-l3-781-4-56-6-1733406513-thumbnail.png?w=2560" alt="shampoo conditioner packs" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Longines HydroConquest 41mm</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Dive Watches</a>
+            
+                      <div class="price-box">
+                        <p class="price">$1200.00</p>
+                        <del>$1400.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://www.tagheuer.com/on/demandware.static/-/Library-Sites-TagHeuer-Shared/default/dw21631e3c/images/sprites/Formula1/CAZ101AN.BA0842/RTW_backUp.jpg" alt="rose gold peacock earrings" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">TAG Heuer Formula 1 Chronograph</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Chronograph Watches</a>
+            
+                      <div class="price-box">
+                        <p class="price">$1160.00</p>
+                        <del>$1300.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured">
+
+            <h2 class="title">Deal of the day</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="https://www.watchdavid.com/wp-content/uploads/2021/04/Tissot-PRX-Powermatic-80-02-1.jpg" alt="shampoo, conditioner & facewash packs" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title">TISSOT PRX Powermatic 80 Automatic Watch</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      A sleek stainless steel Swiss-made automatic watch with an 80-hour power reserve, sapphire crystal, and modern integrated bracelet. Perfect balance of vintage charm and modern engineering.
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">$395.00</p>
+
+                      <del>$495.00</del>
+                    </div>
+
+                    <button class="add-cart-btn">add to cart</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          already sold: <b>34</b>
+                        </p>
+
+                        <p>
+                          available: <b>66</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Hurry Up! Offer ends in:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">6</p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">7</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">45</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">12</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+              
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold diamonds Earring" class="showcase-img">
+                  </div>
+              
+                  <div class="showcase-content">
+              
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+              
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title">Rose Gold diamonds Earring</a>
+                    </h3>
+              
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
+              
+                    <div class="price-box">
+                      <p class="price">$1990.00</p>
+                      <del>$2000.00</del>
+                    </div>
+              
+                    <button class="add-cart-btn">add to cart</button>
+              
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p> already sold: <b>15</b> </p>
+              
+                        <p> available: <b>40</b> </p>
+                      </div>
+              
+                      <div class="showcase-status-bar"></div>
+                    </div>
+              
+                    <div class="countdown-box">
+              
+                      <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+              
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">360</p>
+                          <p class="display-text">Days</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title">New Products</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="https://i5.walmartimages.com/asr/45f9a7f8-3859-4aa7-a106-3b6a0daf2fe5_1.a988384597e0f0bb3410e021fab2e0dd.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff" alt="" width="300" class="product-img default">
+                  <img src="https://preview.redd.it/vv4xqiby24i11.jpg?width=640&crop=smart&auto=webp&s=aad282022d00e3481d09fe800d53ac6c3d7c29bb" alt="" width="300" class="product-img hover">
+
+                  <p class="showcase-badge">15%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Chronograph Watches</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Timex Weekender Chronograph</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$85.00</p>
+                    <del>$65.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://www.mvmt.com/dw/image/v2/BDKZ_PRD/on/demandware.static/-/Sites-mgi-master/default/dwf5debc8f/images/products/28000321_l_1.jpg?sw=830&sh=830" alt="MVMT Classic Series - Black Leather" class="product-img default"
+                    width="300">
+                  <img src="https://www.mvmt.com/dw/image/v2/BDKZ_PRD/on/demandware.static/-/Sites-mgi-master/default/dw5efeda66/images/products/28000321_l_5.jpg?sw=1660&sh=1660" alt="MVMT Classic Series - Black Leather" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">Sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Casual Watch</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">MVMT Classic Series - Black Leather</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$120.00</p>
+                    <del>$99.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://th.bing.com/th/id/R.ebabf8005f819b895f934d4789969b39?rik=yP7yBTmY3v%2btOQ&riu=http%3a%2f%2fwww.bremont.com%2fcdn%2fshop%2fproducts%2fALT1-P2-Blue-Aviation-Pilots-Watch.png%3fv%3d1634577153&ehk=rUKKfhmFYjmxkeJn1eZcqnxRaJliae%2fdlrNr2lsB424%3d&risl=&pid=ImgRaw&r=0" alt="Shinola Runwell 41mm Blue Dial" class="product-img default"
+                    width="300">
+                  <img src="https://tse2.mm.bing.net/th/id/OIP.UDHuDcEYzCRfuiIBev9kxwHaHa?pid=ImgDet&w=474&h=474&rs=1&o=7&rm=3" alt="Shinola Runwell 41mm Blue Dial" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Luxury Watches</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Shinola Runwell 41mm Blue Dial</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$598.00</p>
+                    <del>$535.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://m.media-amazon.com/images/I/616hZUvT+4L._SX679_.jpg" alt="Fossil Grant Automatic Skeleton" class="product-img default"
+                    width="300">
+                  <img src="https://m.media-amazon.com/images/I/616j-yzQEwL._SX679_.jpg" alt="Fossil Grant Automatic Skeleton" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle pink">New</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Kinetic Watches</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Fossil Grant Automatic Skeleton</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$215.00</p>
+                    <del>$185.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://www.nixon.com/cdn/shop/files/A045-511-view1.png?v=1679948155&width=823" alt="Nixon Time Teller Gold" class="product-img default"
+                    width="300">
+                  <img src="https://www.nixon.com/cdn/shop/files/A045-511-view5.png?v=1718858634" alt="Nixon Time Teller Gold" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Casual Watch</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Nixon Time Teller Gold</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$125.00</p>
+                    <del>$99.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://i5.walmartimages.com/asr/8ab141a1-e7e9-42e4-b88b-aba228bc2642.a658591a1be76cd91189690035de3da5.jpeg" alt="Timex Ironman Classic 30" class="product-img default"
+                    width="300">
+                  <img src="https://tse3.mm.bing.net/th/id/OIP.Z5GHTOKKY9tUbswp-Tb1yAAAAA?w=451&h=720&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Timex Ironman Classic 30" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Sport Watch</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Timex Ironman Classic 30</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$60.00</p>
+                    <del>$45.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://m.media-amazon.com/images/I/61c7l4xa73L._AC_.jpg" alt="Fossil Gen 6 Smartwatch" class="product-img default"
+                    width="300">
+                  <img src="https://tse3.mm.bing.net/th/id/OIP.WrYIhpq5INqI8epNIi4jZwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Fossil Gen 6 Smartwatch" class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Smart Watch</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Fossil Gen 6 Smartwatch</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$299.00</p>
+                    <del>$249.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://www.isaacjewelers.com/wp-content/uploads/2020/09/shinola-the-guardian-415mm-watch.jpg" alt="Shinola Guardian 41.5mm" class="product-img default"
+                    width="300">
+                  <img src="https://www.righttime.com/images/case/s0120224034_side2.jpg" alt="Shinola Guardian 41.5mm" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Luxury Watch</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Shinola Guardian 41.5mm</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$650.00</p>
+                    <del>$599.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://tse4.mm.bing.net/th/id/OIP.mKgp-MFwHaQJkmCiwuOMXwHaHa?w=1200&h=1200&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Timex Marlin Hand-Wound" class="product-img default"
+                    width="300">
+                  <img src="https://timeandtidewatches.com/wp-content/uploads/2024/02/Timex-Marlin-Hand-Wound-Wrist-Shot.jpg" alt="Timex Marlin Hand-Wound" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Kinetic Watch</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Timex Marlin Hand-Wound</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$199.00</p>
+                    <del>$169.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://preview.redd.it/brew-metric-retro-dial-v0-ruvs8y25875a1.jpg?width=640&crop=smart&auto=webp&s=e47610d338eaf9dcc74601e1f1e603b1eeb292e1" alt=" Brew Metric Retro Dial" class="product-img default"
+                    width="300">
+                  <img src="https://www.thecoolector.com/wp-content/uploads/2023/01/brew.jpg" alt=" Brew Metric Retro Dial" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Casual Watch</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title"> Brew Metric Retro Dial</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$395.00</p>
+                    <del>$375.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://tse3.mm.bing.net/th/id/OIP.8nLfcw2-YM8FzV1ZrQE4swHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt=" Oak & Oscar Humboldt GMT" class="product-img default"
+                    width="300">
+                  <img src="https://www.watchtime.com/wp-content/uploads/2018/05/Bell__Ross_BRV2-93-GMT_front_1000.png" alt=" Oak & Oscar Humboldt GMT" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Kinetic Watch</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title"> Oak & Oscar Humboldt GMT</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$1750.00</p>
+                    <del>$1600.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://tse4.mm.bing.net/th/id/OIP.1rjSeU-Ffeu4wWDN0vUUbwHaJH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Weiss Standard Issue Field Watch"
+                    class="product-img default" width="300">
+                  <img src="https://www.gearpatrol.com/wp-content/uploads/sites/2/2018/08/Weiss-38mm-Standard-Issue-Field-Watch-Review-gear-patrol-slide-2-jpg.webp?w=1024" alt="Weiss Standard Issue Field Watch"
+                    class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Kinetic Watch</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Weiss Standard Issue Field Watch</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$998.00</p>
+                    <del>$945.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title">testimonial</h2>
+
+            <div class="testimonial-card">
+
+             <img src="https://cdn.theorg.com/a64564c6-6d79-4741-92bc-18a09ca111f1_medium.jpg" alt="" width="80" height="80">
+
+              <p class="testimonial-name">Sergei Sergienko</p>
+
+              <p class="testimonial-title">CEO & Founder, ChronoTech</p>
+
+              <p>🕰️</p>
+
+              <p class="testimonial-desc">
+                "Elegance meets precision! These timepieces are more than just accessories."
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="https://tse1.explicit.bing.net/th/id/OIP.J7lZXBWKe2otZ5ek2b33-wHaEa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="summer collection" class="cta-banner">
+
+            <a href="#" class="cta-content">
+
+              <p class="discount">25% Discount</p>
+
+              <h2 class="cta-title">Classic Watch Collection
+
+
+</h2>
+
+              <p class="cta-text">Starting @ $99
+</p>
+
+              <button class="cta-btn">SHOP NOW</button>
+
+            </a>
+
+          </div>
+
+
+
+          <!--
+            - SERVICE
+          -->
+
+          <div class="service">
+
+            <h2 class="title">Our Services</h2>
+
+            <div class="service-container">
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title">⌚ Free Watch Adjustment</h3>
+                  <p class="service-desc">Lifetime adjustments on all purchases</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">
+📦 Fast Shipping
+
+</h3>
+                  <p class="service-desc">Delivered within 3-5 days</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">📞 Premium Support
+</h3>
+                  <p class="service-desc">Hours: 9AM – 9PM</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">↩️ Easy Return Policy
+</h3>
+                  <p class="service-desc">Return within 15 days</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title">💸 100% Authenticity Guarantee</h3>
+                 
+              
+                </div>
+              
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    -->
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="https://www.luxurybazaar.com/grey-market/wp-content/uploads/2025/03/2025-Omega-Watch-Releases-4.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Luxury</a>
+
+              <a href="#">
+                <h3 class="blog-title">Luxury Watch Trends 2025: A Collector’s Guide</h3>
+              </a>
+
+              <p class="blog-meta">
+                By <cite> Mr. Carter </cite> / <time datetime="2022-04-06">Jun 20, 2025</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="https://reviewify.co.uk/storage/2024/11/top_smartwatches_for_2024.jpg" alt=""
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Smart Watches
+</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Top Smartwatches for Everyday Use
+By Ms. Evelyn / May 05, 2025</a>
+              </h3>
+          
+              <p class="blog-meta">
+                By <cite> Ms. Evelyn </cite> / <time datetime="2022-01-18">May 05, 2025</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="https://th.bing.com/th/id/R.21c1b2effa0147ec61a47b12574f87e4?rik=J88R%2bSBevCfkDQ&riu=http%3a%2f%2fswanandedgar.com%2fcdn%2fshop%2farticles%2fhow-to-look-after-your-automatic-watch-739751.jpg%3fv%3d1689691356&ehk=o3vbQje7abAkCjhZ5xvNBSk8LnrAs%2bC8XB%2bnKTd7Iv4%3d&risl=&pid=ImgRaw&r=0" alt=""
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Automatic Watches
+</a>
+          
+              <h3>
+                <a href="#" class="blog-title">How to Spot a Genuine Automatic Watch
+</a>
+              </h3>
+          
+              <p class="blog-meta">
+                By <cite> Mr. Blake  </cite> / <time datetime="2022-02-10">Apr 15, 2025</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="https://tse3.mm.bing.net/th/id/OIP.Sjy7Wy40BolxP3ZirvDO4QHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Men’s Watches</a>
+          
+              <h3>
+                <a href="#" class="blog-title">Diver Watches vs. Field Watches: What's Best for You?
+ </a>
+              </h3>
+          
+              <p class="blog-meta">
+                By <cite>Mr. Rowan </cite> / <time datetime="2022-03-15"> Mar 30, 2025</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Brand directory</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">Collections :</h3>
+
+          <a href="#" class="footer-category-link">Smartwatches</a>
+<a href="#" class="footer-category-link">Analog Watches</a>
+<a href="#" class="footer-category-link">Automatic Watches</a>
+<a href="#" class="footer-category-link">Chronograph</a>
+<a href="#" class="footer-category-link">Diver Watches</a>
+<a href="#" class="footer-category-link">Dress Watches</a>
+<a href="#" class="footer-category-link">Luxury Watches</a>
+
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Watches :</h3>
+
+<a href="#" class="footer-category-link">Field Watches</a>
+<a href="#" class="footer-category-link">Minimalist Watches</a>
+<a href="#" class="footer-category-link">Smart Fitness Watches</a>
+<a href="#" class="footer-category-link">GMT Watches</a>
+<a href="#" class="footer-category-link">Pilot Watches</a>
+<a href="#" class="footer-category-link">Hybrid Smartwatches</a>
+<a href="#" class="footer-category-link">Solar Powered Watches</a>
+<a href="#" class="footer-category-link">Tactical Watches</a>
+<a href="#" class="footer-category-link">Luxury Dress Watches</a>
+<a href="#" class="footer-category-link">Mechanical Watches</a>
+
+
+        <div class="footer-category-box">
+  <h3 class="category-box-title">Watch Accessories :</h3>
+
+  <a href="#" class="footer-category-link">Leather Straps</a>
+  <a href="#" class="footer-category-link">Metal Bracelets</a>
+  <a href="#" class="footer-category-link">Rubber Straps</a>
+  <a href="#" class="footer-category-link">Watch Winders</a>
+  <a href="#" class="footer-category-link">Watch Boxes</a>
+  <a href="#" class="footer-category-link">Strap Buckles</a>
+  <a href="#" class="footer-category-link">Replacement Bezels</a>
+  <a href="#" class="footer-category-link">Lugs & Pins</a>
+  <a href="#" class="footer-category-link">Protective Films</a>
+  <a href="#" class="footer-category-link">Cleaning Kits</a>
+  <a href="#" class="footer-category-link">Tool Kits</a>
+</div>
+<div class="footer-category-box">
+  <h3 class="category-box-title">Watch Care :</h3>
+
+  <a href="#" class="footer-category-link">Watch Cleaning Spray</a>
+  <a href="#" class="footer-category-link">Microfiber Cloths</a>
+  <a href="#" class="footer-category-link">Waterproofing Kits</a>
+  <a href="#" class="footer-category-link">Watch Polishing Pads</a>
+  <a href="#" class="footer-category-link">Anti-Fog Solutions</a>
+  <a href="#" class="footer-category-link">Glass Protectors</a>
+  <a href="#" class="footer-category-link">Scratch Removers</a>
+  <a href="#" class="footer-category-link">UV Coating Spray</a>
+  <a href="#" class="footer-category-link">Watch Battery Kits</a>
+  <a href="#" class="footer-category-link">Movement Oils</a>
+  <a href="#" class="footer-category-link">Dust Blowers</a>
+  <a href="#" class="footer-category-link">Case Openers</a>
+  <a href="#" class="footer-category-link">Gasket Replacements</a>
+  <a href="#" class="footer-category-link">Moisture Absorbers</a>
+  <a href="#" class="footer-category-link">Watch Storage Rolls</a>
+  <a href="#" class="footer-category-link">Anti-Magnetic Cases</a>
+</div>
+
+    <div class="footer-nav">
+
+      
+         

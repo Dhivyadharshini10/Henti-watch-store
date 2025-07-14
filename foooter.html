@@ -1,86 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- divinectorweb.com -->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bootstrap 5 footer design</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="footer.css">
+  <meta charset="UTF-8">
+  <title>HENTI | About</title>
+  <link rel="stylesheet" href="template.css">
+  <style>
+    /* Sidebar Styling */
+    #menuToggle {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+    
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+      z-index: 10000;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+      z-index: 9999;
+    }
+
+    #sidebar a {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #f1f1f1;
+      display: block;
+      transition: 0.3s;
+    }
+
+    #sidebar a:hover {
+      background-color: #575757;
+    }
+
+    .closebtn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    
-    <div class="content">
-        <div class="container">
-            <div class="single-content">
-                <h1>Website Content</h1>
-            </div>
-        </div>
+
+<!-- Sidebar Trigger -->
+<div id="menuToggle">MENU</div>
+
+<!-- Sidebar -->
+<div id="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+  <a href="homepage.html">Home</a>
+  <a href="index.html">Our World</a>
+  <a href="navigation.html">Contact</a>
+</div>
+
+<!-- Main Content -->
+<div data-parallax="container">
+  <header data-parallax="group">
+    <div class="title" data-parallax="layer" data-parallax-speed="front">
+      <h1>HENTI<span></span></h1>
+      <p>Masterpieces</p>
     </div>
+    <div data-parallax="layer" data-parallax-speed="slowest" data-image="captain-america"></div>
+    <div data-parallax="layer" data-parallax-speed="slower" data-image="scarlet-witch"></div>
+    <div data-parallax="layer" data-parallax-speed="slow" data-image="black-widow"></div>
+    <div data-parallax="layer" data-parallax-speed="slower" data-image="vision"></div>
+    <div data-parallax="layer" data-parallax-speed="slowest" data-image="iron-man"></div>
+  </header>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-box">
-                        <img src="img/logo.png" alt="">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam repellendus sunt praesentium aspernatur iure molestias.</p>
-                    <h3>We Accect</h3>
-                   <div>
-                    <i class="fa-brands fa-square-instagram"></i>
-                   </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-box">
-                        <h2>WATCHES</h2>
-                    <ul>
-                        <li><a href="https://www.audemarspiguet.com/com/en/watch-collection.html">ALL WATCHES</a></li>
-                        <li><a href="#">OUR COLLECTION</a></li>
-                        <li><a href="#">NEW RELEASES</a></li>
-                        <li><a href="#">FIND A BOUTIQUE</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">OUR WORLLD</a></li>
-                    </ul>
-                    </div>                    
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-box">
-                        <h2>OUR WORLD</h2>
-                    <ul>
-                        <li><a href="#">BORN IN LE BRASSUS</a></li>
-                        <li><a href="#">MUSEE ATELIER</a></li>
-                        <li><a href="#"> AP CHRONICLES</a></li>
-                        <li><a href="#">GOLDEN ELLIPSE</a></li>
-                        <li><a href="#">GONDOLO</a></li>
-                        <li><a href="#">NAUTILUS</a></li>
-                    </ul>
-                    </div>                    
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-box">
-                        <h2>Newsletter</h2>
-                        <p>Be the first to receive the latest news on our brand, products and upcoming events.</p>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Enter your Email ..." aria-describedby="basic-addon2">
-                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-long-arrow-right"></i></span>
-                        </div>
-                        <h2>Follow us on</h2>
-                        <p class="socials">
-                            <i class="fa fa-facebook"></i>
-                            <i class="fa fa-dribbble"></i>
-                            <i class="fa fa-pinterest"></i>
-                            <i class="fa fa-twitter"></i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <section class="preamble" data-parallax="none">
+    <p><strong>Explore:</strong> "Explore a wide range of watches for every style and occasion! From luxury timepieces to casual everyday wear, we have all types of watches available on our website. Whether you're looking for a sleek modern design, a classic analog watch, or a durable sports watch, you'll find the perfect fit. Browse through our collection today and find your next favorite watch!"</p>
+  </section>
+
+  <section class="parallax" data-parallax="group">
+    <div data-parallax="layer" data-parallax-speed="base"></div>
+    <p><strong>The Rolex</strong> Yacht-Master <i lang="el">παράλλαξις</i> is a luxury sports watch manufactured by Rolex and first introduced in 1992 as Reference 16628 in 18-karat yellow gold...</p>
+    <div class="stars" data-parallax="layer" data-parallax-speed="slow"></div>
+    <div class="deep-stars" data-parallax="layer" data-parallax-speed="slowest"></div>
+  </section>
+</div>
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.min.js">
+
+<!-- Sidebar Script -->
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const sidebar = document.getElementById("sidebar");
+
+  menuToggle.onclick = () => {
+    sidebar.style.width = "200px";
+  };
+
+  function closeSidebar() {
+    sidebar.style.width = "0";
+  }
+</script>
+
 </body>
 </html>

@@ -2,200 +2,240 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HENTI|women's watches</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="women.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HENTI | Women's Watches</title>
 
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap"
+    rel="stylesheet" />
 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="women.css" />
+
+  <style>
+    /* Sidebar styles */
+    .side-navbar {
+      background-color: #1d232c;
+      width: 20%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      padding: 20px;
+      color: white;
+      transition: 0.3s ease;
+      z-index: 999;
+    }
+
+    .side-navbar.show {
+      left: 0;
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 998;
+      display: none;
+    }
+
+    #overlay.show {
+      display: block;
+    }
+
+    .side-navbar-link {
+      margin-bottom: 30px;
+    }
+
+    .side-navbar-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .side-navbar-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Style the menu text */
+    .navbar-menu-text {
+      font-size: 18px;
+      cursor: pointer;
+      color: black;
+      font-weight: 600;
+    }
+  </style>
 </head>
 
-<body style="background-color: white">
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>HENTI</h1>
+    <div class="navbar-menu-text" id="open-nav">MENU</div>
+  </nav>
 
-    <nav class="navbar">
-        <h1>HENTI</h1>
-
-        
-        <div class="navbar-menu-toggle" onclick="shownavbar()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </nav>
-
-    <div class="side-navbar" >
-        <p style="text-align: right;">
-            <i class="fa-solid fa-xmark"></i>
-        </p>
-
-        <div class="side-navbar-links">
-            <p class="side-navbar-link"><a href="index.html">Home</a></p>
-            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
-            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
-        </div>
-
+  <!-- Sidebar -->
+  <div class="side-navbar" id="sidebar">
+    <p style="text-align: right;">
+      <i class="fa-solid fa-xmark" id="close-nav" style="font-size: 24px; cursor: pointer;"></i>
+    </p>
+    <div class="side-navbar-links">
+      <p class="side-navbar-link"><a href="homepage.html">Home</a></p>
+      <p class="side-navbar-link"><a href="index.html">Collections</a></p>
+      <p class="side-navbar-link"><a href="navigation.html">Contact</a></p>
     </div>
+  </div>
 
-    <div class="header">
-        <div>
-            <h1>Level up your style</h1>
-            <p> with our henti wrist watches</p>
-            <button class="header-button">Shop now</button>
-        </div>
+  <!-- Overlay -->
+  <div id="overlay"></div>
 
-        <div>
-            <img class="header-image" src="https://i.pinimg.com/736x/cd/ee/bf/cdeebf81b2b511a97c33e863e20d1a68.jpg"
-                height="300px" width="300px">
-        </div>
-
-    </div>
-    <!--service-->
-    <div class="service">
-        <div class="service-container-1">
-            <div>
-                <h2>We provide best</h2>
-                <h2>customer experience</h2>
-            </div>
-            <div>
-                <p>||we ensure that our customer have the best shopping experience.</p>
-            </div>
-
-        </div>
-
-        <div class="service-container-2">
-            <div>
-                <i class="fa-regular fa-face-smile"></i>
-                <h4>Satisfaction guarentee</h4>
-                <p> Unbeatable Discounts on everything you love.!</p>
-            </div>
-
-            <div>
-                <i class="fa-regular fa-face-smile"></i>
-                <h4>New arrivals everyday</h4>
-                <p> "Discover something new every day – fresh arrivals just for you!"!</p>
-            </div>
-
-            <div>
-                <i class="fa-regular fa-face-smile"></i>
-                <h4>Free-shipping</h4>
-                <p> Free Shipping on orders above $50—straight to your doorstep.!</p>
-            </div>
-
-
-        </div>
-    </div>
-
-
+  <!-- Header -->
+  <div class="header">
     <div>
-        <h2 style="padding: 20px;">New Arrival</h2>
-
-        <div class="new-arrival">
-            <div class="new-arrival-container">
-
-                <img src="https://i.pinimg.com/736x/8f/0f/48/8f0f482598def94fef279786ace591a4.jpg" width="200px"
-                    height="200px">
-                <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="new-arrival-container">
-
-                <img src="https://i.pinimg.com/736x/73/1b/f5/731bf56bbdac52fc825b1753571cc29f.jpg"
-                    width="200px" height="200px">
-                <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="new-arrival-container">
-
-                <img src="https://i.pinimg.com/736x/78/33/be/7833be2aaa8b25284d46f2f5559c81e1.jpg" width="200px" height="200px">
-                <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="new-arrival-container">
-
-                <img src="https://i.pinimg.com/736x/5c/1a/a1/5c1aa16beda99222b0e509e79aad64c3.jpg"
-                    width="200px" height="200px">
-                <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-        </div>
-
+      <h1>Level up your style</h1>
+      <p>with our henti wrist watches</p>
+      <button class="header-button">Shop now</button>
     </div>
-
     <div>
-        <h2 style="padding: 20px;">Most Wanted</h2>
+      <img class="header-image"
+        src="https://i.pinimg.com/736x/cd/ee/bf/cdeebf81b2b511a97c33e863e20d1a68.jpg" height="300px" width="300px" />
+    </div>
+  </div>
 
-        <div class="new-arrival">
-            <div class="new-arrival-container">
-
-                <img src="https://i.pinimg.com/736x/f8/61/29/f861290330693b4d3a7530fcc1723759.jpg" width="200px"
-                    height="200px">
-                <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="new-arrival-container">
-
-                <img src="https://i.pinimg.com/736x/bd/13/e3/bd13e36458a0c4ab1741ac40fa090ba2.jpg" width="200px"
-                    height="200px">
-                <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="new-arrival-container">
-
-                <img src="https://i.pinimg.com/736x/c6/27/5f/c6275f9127ca9fd3f5aa6009d6940e05.jpg" width="200px"
-                    height="200px">
-                <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="new-arrival-container">
-
-                <img src="https://i.pinimg.com/736x/86/f9/43/86f94380f23371507ef52ff63e3bcbc3.jpg" width="200px"
-                    height="200px">
-                <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-        </div>
-
+  <!-- Services -->
+  <div class="service">
+    <div class="service-container-1">
+      <div>
+        <h2>We provide best</h2>
+        <h2>customer experience</h2>
+      </div>
+      <div>
+        <p>|| we ensure that our customers have the best shopping experience.</p>
+      </div>
     </div>
 
-    <!--news-->
-    <div class="news">
-        <h2>Join our News Letter</h2>
-        <p>Signup for the email newsletter to get exclusive discounts and updates and more</p>
-        <div>
-            <input type="text" class="search">
-        </div>
-        <div>
-            <button>Subscribe <i class="fa-solid fa-arrow-right"></i></button>
-        </div>
+    <div class="service-container-2">
+      <div>
+        <i class="fa-regular fa-face-smile"></i>
+        <h4>Satisfaction Guarantee</h4>
+        <p>Unbeatable Discounts on everything you love!</p>
+      </div>
+      <div>
+        <i class="fa-regular fa-face-smile"></i>
+        <h4>New arrivals every day</h4>
+        <p>Discover something new every day – fresh arrivals just for you!</p>
+      </div>
+      <div>
+        <i class="fa-regular fa-face-smile"></i>
+        <h4>Free Shipping</h4>
+        <p>Free Shipping on orders above $50 — straight to your doorstep!</p>
+      </div>
     </div>
+  </div>
 
-
-
-
-    <!--footer-->
-    <div class="footer">
-        <div class="footer-container">
-            <div class="footer-box-1">
-                <h2 class="headingtext">Henti</h2>
-                <p>"We'd love to hear from you! Reach out with any questions, feedback, or inquiries. Fill out our contact form, email us , or call us . Our team is here to help!."</p>
-                <div class="footer-icon-container">
-                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                    <i class="fa-brands fa-facebook" style="color: #ffffff;"> </i>
-                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-
-                </div>
-            </div>
-
-        </div>
-     
+  <!-- New Arrival -->
+  <div>
+    <h2 style="padding: 20px;">New Arrival</h2>
+    <div class="new-arrival">
+      <div class="new-arrival-container">
+        <img src="https://i.pinimg.com/736x/8f/0f/48/8f0f482598def94fef279786ace591a4.jpg" width="200px" height="200px" />
+        <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="new-arrival-container">
+        <img src="https://i.pinimg.com/736x/73/1b/f5/731bf56bbdac52fc825b1753571cc29f.jpg" width="200px" height="200px" />
+        <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="new-arrival-container">
+        <img src="https://i.pinimg.com/736x/78/33/be/7833be2aaa8b25284d46f2f5559c81e1.jpg" width="200px" height="200px" />
+        <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="new-arrival-container">
+        <img src="https://i.pinimg.com/736x/5c/1a/a1/5c1aa16beda99222b0e509e79aad64c3.jpg" width="200px" height="200px" />
+        <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
     </div>
+  </div>
 
+  <!-- Most Wanted -->
+  <div>
+    <h2 style="padding: 20px;">Most Wanted</h2>
+    <div class="new-arrival">
+      <div class="new-arrival-container">
+        <img src="https://i.pinimg.com/736x/f8/61/29/f861290330693b4d3a7530fcc1723759.jpg" width="200px" height="200px" />
+        <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="new-arrival-container">
+        <img src="https://i.pinimg.com/736x/bd/13/e3/bd13e36458a0c4ab1741ac40fa090ba2.jpg" width="200px" height="200px" />
+        <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="new-arrival-container">
+        <img src="https://i.pinimg.com/736x/c6/27/5f/c6275f9127ca9fd3f5aa6009d6940e05.jpg" width="200px" height="200px" />
+        <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <div class="new-arrival-container">
+        <img src="https://i.pinimg.com/736x/86/f9/43/86f94380f23371507ef52ff63e3bcbc3.jpg" width="200px" height="200px" />
+        <button>Shop now <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
 
+  <!-- Newsletter -->
+  <div class="news">
+    <h2>Join our News Letter</h2>
+    <p>Signup for the email newsletter to get exclusive discounts and updates and more</p>
+    <div>
+      <input type="text" class="search" />
+    </div>
+    <div>
+      <button>Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
 
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-box-1">
+        <h2 class="headingtext">Henti</h2>
+        <p>"We'd love to hear from you! Reach out with any questions, feedback, or inquiries. Fill out our contact form,
+          email us, or call us. Our team is here to help!"</p>
+        <div class="footer-icon-container">
+          <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+          <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+          <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="index.js"></script>
-    <script src="container.js"></script>
-    <script src="sample.js"></script>
-    <script src="box.js"></script>
+  <!-- Sidebar Script -->
+  <script>
+    const openNav = document.getElementById("open-nav");
+    const closeNav = document.getElementById("close-nav");
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
 
+    openNav.onclick = () => {
+      sidebar.classList.add("show");
+      overlay.classList.add("show");
+    };
+
+    closeNav.onclick = () => {
+      sidebar.classList.remove("show");
+      overlay.classList.remove("show");
+    };
+
+    overlay.onclick = () => {
+      sidebar.classList.remove("show");
+      overlay.classList.remove("show");
+    };
+  </script>
 </body>
 
 </html>

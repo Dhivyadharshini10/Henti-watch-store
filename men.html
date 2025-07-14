@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HENTI - Hero Watch Section</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .hero-section {
+      width: 100%;
+      height: 100vh;
+      background-color: #3e5263;
+      position: relative;
+    }
+
+    .hero-overlay {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(180deg, rgba(0,0,0,.3), black);
+      z-index: 1;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-gap: 2em;
+      width: 90%;
+      margin: 0 auto;
+      grid-template-columns: repeat(5, 1fr);
+      position: relative;
+      z-index: 2;
+    }
+
+    .one {
+      height: 600px;
+      grid-column: 1 / span 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+    }
+
+    .img-small-one {
+      position: absolute;
+      width: 160px;
+      top: 430px;
+      left: 385px;
+    }
+
+    .two {
+      grid-column: 3 / span 2;
+      background-image: url('https://images.unsplash.com/photo-1602752975366-5520991f958d?ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+
+    .three {
+      grid-column: 5 / 6;
+      margin-top: 100px;
+      position: relative;
+    }
+
+    .img-small-two {
+      position: absolute;
+      width: 200px;
+      top: 140px;
+      left: -70px;
+    }
+
+    .tag-line {
+      color: #e7b9a5;
+      text-transform: uppercase;
+    }
+
+    .title {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #e7b9a5;
+      width: 650px;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .page-description {
+      padding-block: 2em;
+      max-width: 500px;
+      color: #C4CFDA;
+    }
+
+    .cta {
+      text-transform: uppercase;
+      background-color: #C4CFDA;
+      color: black;
+      padding: 1em 3em;
+      border: none;
+      cursor: pointer;
+      border-radius: .2em;
+      font-weight: bold;
+      transition: 0.3s ease-out;
+    }
+
+    .cta:hover {
+      box-shadow: 0px 5px 25px rgba(255,255,255,0.25);
+    }
+
+    .next-watch {
+      display: flex;
+      align-items: center;
+      color: #e7b9a5;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .next-watch:hover {
+      transform: translateX(6px);
+      transition: 0.3s ease;
+    }
+
+    .material-icons.md-18 {
+      color: #C4CFDA;
+      font-size: 18px;
+      margin-left: .5em;
+    }
+
+    .new-section {
+      width: 100%;
+      height: 100vh;
+      background-color: black;
+    }
+
+    /* Menu styles */
+    .menu-text {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      z-index: 999;
+      cursor: pointer;
+    }
+
+    /* Sidebar */
+    .side-navbar {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 30%;
+      height: 100%;
+      background-color: #1d232c;
+      color: white;
+      padding: 30px 20px;
+      z-index: 1000;
+      transition: 0.3s ease;
+    }
+
+    .side-navbar.show {
+      left: 0;
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 998;
+      display: none;
+    }
+
+    #overlay.show {
+      display: block;
+    }
+
+    .side-navbar-links a {
+      color: white;
+      display: block;
+      margin: 20px 0;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .side-navbar-links a:hover {
+      text-decoration: underline;
+    }
+
+    .side-navbar-close {
+      text-align: right;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      .side-navbar {
+        width: 70%;
+      }
+
+      .title {
+        font-size: 2.2rem;
+        width: 100%;
+      }
+    }
+  
+  </style>
+</head>
+<body>
+
+  <!-- MENU trigger -->
+  <div class="menu-text" id="open-nav">MENU</div>
+
+  <!-- Sidebar -->
+  <div class="side-navbar" id="sidebar">
+    <div class="side-navbar-close" id="close-nav">&times;</div>
+    <div class="side-navbar-links">
+      <a href="homepage.html">Home</a>
+      <a href="index.html">Collections</a>
+      <a href="navigation.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay"></div>
+
+  <!-- HERO SECTION -->
+  <div class="hero-section">
+    <div class="hero-overlay">
+      <div class="wrapper">
+        <div class="one">
+          <p class="tag-line">Premium quality</p>
+          <h1 class="title">The best men’s watches</h1>
+          <p class="page-description">
+            Precision Crafted, Designed for You. Your Time, Your Style – Wear Excellence.
+            Experience the perfect blend of elegance and precision with our latest timepiece.
+          </p>
+          <a href="https://www.titan.co.in/shop/watches-for-men"><button class="cta">Shop now</button></a>
+          <img class="img-small-one" src="https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?ixlib=rb-1.2.1&auto=format&fit=crop&w=928&q=80" alt="">
+        </div>
+
+        <div class="img-large two"></div>
+
+        <div class="next-section three">
+          <p>Wrist watch</p>
+          <div class="next-watch">
+            <p>Henti</p>
+            <i class="material-icons md-18 green">arrow_forward</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Just to scroll -->
+  <div class="new-section"></div>
+
+  <!-- JavaScript to control sidebar -->
+  <script>
+    const openNav = document.getElementById("open-nav");
+    const closeNav = document.getElementById("close-nav");
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
+
+    openNav.onclick = () => {
+      sidebar.classList.add("show");
+      overlay.classList.add("show");
+    };
+
+    closeNav.onclick = () => {
+      sidebar.classList.remove("show");
+      overlay.classList.remove("show");
+    };
+
+    overlay.onclick = () => {
+      sidebar.classList.remove("show");
+      overlay.classList.remove("show");
+    };
+  </script>
+</body>
+</html>

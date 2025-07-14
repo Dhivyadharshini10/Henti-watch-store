@@ -15,6 +15,18 @@ body {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#open-nav {
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+}
 
 .navbar-links {
     display: flex;
@@ -44,7 +56,10 @@ body {
     padding: 20px;
     color: white;
     transition: 1s;
+}
 
+.side-navbar.show {
+    left: 0;
 }
 
 .side-navbar-link {
